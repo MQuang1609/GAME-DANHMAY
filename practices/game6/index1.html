@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+  <style>
+  #myHeader {
+    background-color: #fffcc0;
+    color: #b916be;
+    padding: 30px;
+    text-align: center;
+  } 
+  </style>
+  </head>
+  <h1 id="myHeader">ONG VÀNG TẬP VIẾT VĂN</h1>
+  <br>
+
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Ong vang tap viet van</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  </head>
+<body class="ext-center">
+
+  <header  class="text-center">
+    <h2 onclick="togglePopup()"> 👉 Hướng dẫn 👈 </h2>
+  </header>
+
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="close-btn" onclick="togglePopup()">&times;</div>
+      
+      <h1>Hướng dẫn</h1>
+
+      <img onclick="tutorial_click3()" id="bgn" src="bgn.png" style="display: none;">
+      
+      <div class="container" id="container1">
+        <img src="story1.png" id="story1">
+        <a id="btn1" onclick="tutorial_click()" class="btn" style="background: url('arrow.png'); width: 150px; height: 100px;"></a>
+      </div>
+
+      <div class="container" id="container2">
+        <img src="story2.png" id="story2" style="display: none;">
+        <a onclick="tutorial_click1()" id="btn2" class="btn" style="background: url('arrow.png'); width: 150px; height: 100px; display: none;"></a>
+      </div>
+      
+      <div class="container" id="container3">
+        <img src="story3.png" id="story3" style="display: none;">
+        <a onclick="tutorial_click2()" id="btn3" class="btn" style="background: url('arrow.png'); width: 150px; height: 100px; display: none;"></a>
+      </div>
+
+      <div class="container" id="container4">
+        <img src="story4.png" id="story4" style="display: none;">
+        <a onclick="tutorial_click3()" id="btn4" class="btn" style="background: url('arrow.png'); width: 150px; height: 100px; display: none;"></a>
+      </div>
+      
+        <h1 style="color:blue;">ONG VÀNG TẬP VIẾT VĂN</h1>
+    </div>
+  </div>
+
+  <div>    
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Kết quả</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        
+        <ul class="result">
+          <li id="level">
+              <canvas id="gamezone" width="400" height="170"></canvas>
+            </li>
+            
+            <li class="wpm_result" id="tu_phut">
+              <span>0</span>
+            </li>
+            <li class="cpm_result" id="ki_tu_phut">
+              <span>0</span>
+            </li>
+            <li class="mistake_result" id="loi">
+              <span>0</span>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="wrapper">
+      <input type="text" class="input-field">
+      <div class="content-box">
+        <div class="typing-text">
+          <p></p>
+        </div>
+        <div class="typing-text">
+          <p></p>
+        </div>
+        <div class="content">
+          <h2> Trích Quốc Văn Giáo Khoa Thư - Lớp Sơ Đẳng </h2>
+          <ul class="result-details">
+            <li class="time">
+              <p>Thời gian:</p>
+              <span><b>60</b>s</span>
+            </li>
+            <li class="mistake">
+              <p>Lỗi:</p>
+              <span>0</span>
+            </li>
+            <li class="wpm">
+              <p>WPM:</p>
+              <span>0</span> <p> &nbsp từ/phút </p>
+            </li>
+            <li class="cpm">
+              <p>CPM:</p>
+              <span>0</span> <p> &nbsp kí tự/phút </p>
+            </li>
+          </ul>
+          <button>Chơi lại</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/paragraphs.js"></script>
+    <script src="js/script.js"></script>
+  
+  </div>
+</body>
+</html>
